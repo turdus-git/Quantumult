@@ -1,0 +1,22 @@
+# ========== LeChat 主站与核心接口 ==========
+DOMAIN-SUFFIX,mistral.ai,LeChat
+DOMAIN-SUFFIX,lechat.ai,LeChat
+DOMAIN-SUFFIX,api.mistral.ai,LeChat
+
+# ========== 身份验证与账户服务 ==========
+DOMAIN-SUFFIX,auth.mistral.ai,LeChat
+DOMAIN-SUFFIX,login.mistral.ai,LeChat
+DOMAIN-SUFFIX,oauth.mistral.ai,LeChat
+
+# ========== 静态资源与 CDN ==========
+DOMAIN-SUFFIX,cdn.mistral.ai,LeChat
+DOMAIN-SUFFIX,assets.mistral.ai,LeChat
+DOMAIN-SUFFIX,static.mistral.ai,LeChat
+DOMAIN-SUFFIX,mistralai-site.azureedge.net,LeChat
+
+# ========== 遥测与实验服务 ==========
+DOMAIN-SUFFIX,telemetry.mistral.ai,LeChat
+DOMAIN-SUFFIX,experiments.mistral.ai,LeChat
+
+# ========== 备用域 ==========
+DOMAIN-SUFFIX,lechat.mistral.ai,LeChat
