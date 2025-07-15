@@ -1,0 +1,7 @@
+# ========== Pedometer++ ==========
+# Google 广告域名
+DOMAIN-SUFFIX,doubleclick-cn.net,REJECT
+DOMAIN-SUFFIX,googlesyndication-cn.com,REJECT
+DOMAIN-SUFFIX,superwall.me,REJECT
+
+# ==========    ==========
