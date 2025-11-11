@@ -1,0 +1,26 @@
+# ========== CDN 服务（必须代理）==========
+DOMAIN-SUFFIX,akamai.net,GoogleCDN
+DOMAIN-SUFFIX,akamaized.net,GoogleCDN
+DOMAIN-SUFFIX,akamaihd.net,GoogleCDN
+DOMAIN-SUFFIX,fastly.net,GoogleCDN
+DOMAIN-SUFFIX,cdnjs.com,GoogleCDN
+DOMAIN-SUFFIX,jsdelivr.net,GoogleCDN
+DOMAIN-SUFFIX,unpkg.com,GoogleCDN
+DOMAIN-SUFFIX,bootstrapcdn.com,GoogleCDN
+DOMAIN-SUFFIX,stackpathcdn.com,GoogleCDN
+DOMAIN-SUFFIX,cloudfront.net,GoogleCDN
+DOMAIN-SUFFIX,s3.amazonaws.com,GoogleCDN
+
+# ========== 身份验证（重要）==========
+DOMAIN-SUFFIX,auth0.com,GoogleCDN
+
+# ========== 开发工具（有用）==========
+DOMAIN-SUFFIX,sentry.io,GoogleCDN
+DOMAIN-SUFFIX,segment.io,GoogleCDN
+
+# ========== 评论/社交（国外服务）==========
+DOMAIN-SUFFIX,disqus.com,GoogleCDN
+
+# ========== 支付/字体（必须代理）==========
+DOMAIN-SUFFIX,stripe.com,GoogleCDN
+DOMAIN-SUFFIX,typekit.net,GoogleCDN
