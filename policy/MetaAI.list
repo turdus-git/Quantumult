@@ -1,22 +1,27 @@
 # NAME: MetaAI
 # AUTHOR: Your Name
-# UPDATED: 2025-12-30
+# UPDATED: 2025-12-31
+# 涵盖业务：Meta AI 独立 App、网页版、身份验证及 Threads 2025 补丁
 
-# Meta AI 核心服务
-HOST-SUFFIX,meta.ai,Proxy
-HOST-SUFFIX,llama.com,Proxy
-HOST-SUFFIX,llama-api.com,Proxy
-HOST-SUFFIX,llama.meta.com,Proxy
+# === Meta AI 核心服务 (Llama 3/4) ===
+HOST-SUFFIX,meta.ai,Proxy,remote-dns
+HOST-SUFFIX,llama.com,Proxy,remote-dns
+HOST-SUFFIX,llama-api.com,Proxy,remote-dns
+HOST-SUFFIX,llama.meta.com,Proxy,remote-dns
 
-# Meta 统一身份验证与账号中心
-HOST-SUFFIX,auth.meta.com,Proxy
-HOST-SUFFIX,work.meta.com,Proxy
-HOST-SUFFIX,accountscenter.meta.com,Proxy
+# === Meta 统一身份验证与账号中心 (保号核心) ===
+HOST-SUFFIX,auth.meta.com,Proxy,remote-dns
+HOST-SUFFIX,work.meta.com,Proxy,remote-dns
+HOST-SUFFIX,accountscenter.meta.com,Proxy,remote-dns
 
-# Meta 基础设施 (API/CDN)
-HOST-SUFFIX,graph.meta.com,Proxy
-HOST-SUFFIX,edge-chat.meta.ai,Proxy
-HOST-SUFFIX,scontent.xx.fbcdn.net,Proxy
-HOST-SUFFIX,static.xx.fbcdn.net,Proxy
+# === Meta 基础设施与生图功能 ===
+HOST-SUFFIX,graph.meta.com,Proxy,remote-dns
+HOST-SUFFIX,edge-chat.meta.ai,Proxy,remote-dns
+HOST,imagine.static.meta.ai,Proxy,remote-dns
 
-# 注意：threads.com 已删除，由 6.06 SO (Threads) 远程规则处理
+# === 2025 Threads 迁移补丁 ===
+HOST-SUFFIX,threads.com,Proxy,remote-dns
+
+# === 基础资源 (确保 AI 图片显示) ===
+HOST-SUFFIX,scontent.xx.fbcdn.net,Proxy,remote-dns
+HOST-SUFFIX,static.xx.fbcdn.net,Proxy,remote-dns
