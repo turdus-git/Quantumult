@@ -1,17 +1,14 @@
-# NAME: Grok (xAI)
-# UPDATED: 2026-01-01
+# NAME: Grok (xAI) - 2026 加固版
 
-# === Grok 2026 主站 (包含 grok.com, grok.ai, grokcdn.com 等) ===
+# === 品牌关键词拦截 ===
+HOST-KEYWORD,xai,Proxy
+HOST-KEYWORD,grok,Proxy
+
+# === 核心域名 ===
 HOST-SUFFIX,grok.com,Proxy
 HOST-SUFFIX,grok.ai,Proxy
-HOST-SUFFIX,grokcdn.com,Proxy
-
-# === xAI 公司核心 (包含 auth, login, api, telemetry 等所有子域名) ===
 HOST-SUFFIX,xai.com,Proxy
 HOST-SUFFIX,x.ai,Proxy
-
-# === 实时对话流补丁 (防止断线) ===
+HOST-SUFFIX,grokcdn.com,Proxy
 HOST-SUFFIX,xai-stream.com,Proxy
-
-# === 静态资源托管 ===
 HOST-SUFFIX,xai-site.azureedge.net,Proxy
