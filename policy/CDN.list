@@ -1,26 +1,31 @@
-# ========== CDN 服务（必须代理）==========
-DOMAIN-SUFFIX,akamai.net,GoogleCDN
-DOMAIN-SUFFIX,akamaized.net,GoogleCDN
-DOMAIN-SUFFIX,akamaihd.net,GoogleCDN
-DOMAIN-SUFFIX,fastly.net,GoogleCDN
-DOMAIN-SUFFIX,cdnjs.com,GoogleCDN
-DOMAIN-SUFFIX,jsdelivr.net,GoogleCDN
-DOMAIN-SUFFIX,unpkg.com,GoogleCDN
-DOMAIN-SUFFIX,bootstrapcdn.com,GoogleCDN
-DOMAIN-SUFFIX,stackpathcdn.com,GoogleCDN
-DOMAIN-SUFFIX,cloudfront.net,GoogleCDN
-DOMAIN-SUFFIX,s3.amazonaws.com,GoogleCDN
+# NAME: Global CDN & Assets
+# UPDATED: 2026-01-01
 
-# ========== 身份验证（重要）==========
-DOMAIN-SUFFIX,auth0.com,GoogleCDN
+# === 核心 CDN 服务商 ===
+HOST-SUFFIX,akamai.net,Proxy
+HOST-SUFFIX,akamaized.net,Proxy
+HOST-SUFFIX,akamaihd.net,Proxy
+HOST-SUFFIX,fastly.net,Proxy
+HOST-SUFFIX,cloudfront.net,Proxy
+HOST-SUFFIX,amazonaws.com,Proxy
+HOST-SUFFIX,edgecomputing.com,Proxy
 
-# ========== 开发工具（有用）==========
-DOMAIN-SUFFIX,sentry.io,GoogleCDN
-DOMAIN-SUFFIX,segment.io,GoogleCDN
+# === 公共前端库 ===
+HOST-SUFFIX,cdnjs.com,Proxy
+HOST-SUFFIX,jsdelivr.net,Proxy
+HOST-SUFFIX,unpkg.com,Proxy
+HOST-SUFFIX,bootstrapcdn.com,Proxy
+HOST-SUFFIX,stackpathcdn.com,Proxy
+HOST-SUFFIX,typekit.net,Proxy
+HOST-SUFFIX,fonts.net,Proxy
 
-# ========== 评论/社交（国外服务）==========
-DOMAIN-SUFFIX,disqus.com,GoogleCDN
+# === 关键身份验证与支付 ===
+HOST-SUFFIX,auth0.com,Proxy
+HOST-SUFFIX,stripe.com,Proxy
+HOST-SUFFIX,hcaptcha.com,Proxy
+HOST-SUFFIX,recaptcha.net,Proxy
 
-# ========== 支付/字体（必须代理）==========
-DOMAIN-SUFFIX,stripe.com,GoogleCDN
-DOMAIN-SUFFIX,typekit.net,GoogleCDN
+# === 开发与社交辅助 ===
+HOST-SUFFIX,sentry.io,Proxy
+HOST-SUFFIX,segment.io,Proxy
+HOST-SUFFIX,disqus.com,Proxy
