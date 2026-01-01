@@ -1,23 +1,11 @@
-# ========== Perplexity 主站与核心接口 ==========
-DOMAIN-SUFFIX,perplexity.ai,Perplexity
-DOMAIN-SUFFIX,app.perplexity.ai,Perplexity
-DOMAIN-SUFFIX,api.perplexity.ai,Perplexity
+# NAME: Perplexity (AI Search)
+# UPDATED: 2026-01-01
 
-# ========== 身份验证与账户服务 ==========
-DOMAIN-SUFFIX,auth.perplexity.ai,Perplexity
-DOMAIN-SUFFIX,login.perplexity.ai,Perplexity
-DOMAIN-SUFFIX,oauth.perplexity.ai,Perplexity
+# === Perplexity 核心域名 ===
+HOST-SUFFIX,perplexity.ai,Proxy
+HOST-SUFFIX,pplx.ai,Proxy
+HOST-SUFFIX,perplx.com,Proxy
+HOST-SUFFIX,perplexityapp.ai,Proxy
 
-# ========== 静态资源与 CDN（含 Azure CDN） ==========
-DOMAIN-SUFFIX,cdn.perplexity.ai,Perplexity
-DOMAIN-SUFFIX,assets.perplexity.ai,Perplexity
-DOMAIN-SUFFIX,static.perplexity.ai,Perplexity
-DOMAIN-SUFFIX,perplexity-ai-site.azureedge.net,Perplexity
-DOMAIN-SUFFIX,perplx.com,Perplexity # 常见的短链接/CDN域名，有时会用到
-
-# ========== 遥测与实验服务 ==========
-DOMAIN-SUFFIX,telemetry.perplexity.ai,Perplexity
-DOMAIN-SUFFIX,experiments.perplexity.ai,Perplexity
-
-# ========== 备用域 ==========
-DOMAIN-SUFFIX,perplexityapp.ai,Perplexity
+# === 静态资源托管 ===
+HOST-SUFFIX,perplexity-ai-site.azureedge.net,Proxy
