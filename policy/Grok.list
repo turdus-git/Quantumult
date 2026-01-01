@@ -1,4 +1,5 @@
-# NAME: Grok (xAI) - 2026 加固版
+# NAME: Grok (xAI)
+# UPDATED: 2026-01-01
 
 # === 品牌关键词拦截 ===
 HOST-KEYWORD,xai,Proxy
