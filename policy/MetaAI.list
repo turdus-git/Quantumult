@@ -1,23 +1,35 @@
-# NAME: MetaAI (2026 最终加固版)
+# NAME: MetaAI (2026 终极全自动加固版)
+# AUTHOR: 指挥官 & Gemini
 # UPDATED: 2026-01-01
+# 作用：置顶拦截 Meta AI/社交流量，确保香港兜底模式下绝对不侧漏
 
+# === 第一道防线：全自动关键词拦截 (核心补丁) ===
+# 只要域名包含以下单词，强制去英国，不给滑向香港兜底的机会
+HOST-KEYWORD,meta,Proxy
+HOST-KEYWORD,facebook,Proxy
+HOST-KEYWORD,instagram,Proxy
+HOST-KEYWORD,threads,Proxy
+
+# === 第二道防线：Meta AI 核心域名 ===
 HOST-SUFFIX,meta.ai,Proxy
 HOST-SUFFIX,llama.com,Proxy
 HOST-SUFFIX,llama-api.com,Proxy
 HOST-SUFFIX,llama.meta.com,Proxy
+
+# === 第三道防线：身份验证与账号中心 (保号命脉) ===
 HOST-SUFFIX,auth.meta.com,Proxy
 HOST-SUFFIX,work.meta.com,Proxy
 HOST-SUFFIX,accountscenter.meta.com,Proxy
 
-# Threads 全线拦截
-HOST-SUFFIX,threads.net,Proxy
+# === 第四道防线：Threads & 基础设施 ===
 HOST-SUFFIX,threads.com,Proxy
-HOST-KEYWORD,threads,Proxy
+HOST-SUFFIX,threads.net,Proxy
 HOST-SUFFIX,barcelona.net,Proxy
-
+HOST-SUFFIX,fbcdn.net,Proxy
 HOST-SUFFIX,graph.meta.com,Proxy
-HOST-SUFFIX,edge-chat.meta.ai,Proxy
+
+# === 第五道防线：生图与静态资源 ===
 HOST,api.meta.ai,Proxy
 HOST,imagine.static.meta.ai,Proxy
-HOST-SUFFIX,scontent.xx.fbcdn.net,Proxy
 HOST-SUFFIX,static.xx.fbcdn.net,Proxy
+HOST-SUFFIX,scontent.xx.fbcdn.net,Proxy
