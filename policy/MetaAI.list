@@ -1,28 +1,23 @@
-# NAME: MetaAI
-# AUTHOR: 指挥官 & Gemini
+# NAME: MetaAI (2026 最终加固版)
 # UPDATED: 2026-01-01
-# 涵盖业务：Meta AI (Llama 4/5), Imagine, Accounts Center, Threads 2025
 
-# === Meta AI 核心服务 (Llama Series) ===
 HOST-SUFFIX,meta.ai,Proxy
 HOST-SUFFIX,llama.com,Proxy
 HOST-SUFFIX,llama-api.com,Proxy
 HOST-SUFFIX,llama.meta.com,Proxy
-
-# === Meta 统一身份验证与账号中心 (保号核心) ===
 HOST-SUFFIX,auth.meta.com,Proxy
 HOST-SUFFIX,work.meta.com,Proxy
 HOST-SUFFIX,accountscenter.meta.com,Proxy
 
-# === Meta 基础设施与生图功能 ===
+# Threads 全线拦截
+HOST-SUFFIX,threads.net,Proxy
+HOST-SUFFIX,threads.com,Proxy
+HOST-KEYWORD,threads,Proxy
+HOST-SUFFIX,barcelona.net,Proxy
+
 HOST-SUFFIX,graph.meta.com,Proxy
 HOST-SUFFIX,edge-chat.meta.ai,Proxy
 HOST,api.meta.ai,Proxy
 HOST,imagine.static.meta.ai,Proxy
-
-# === 2025 Threads 迁移补丁 (防滑向香港) ===
-HOST-SUFFIX,threads.com,Proxy
-
-# === 基础资源 (确保 AI 图片与样式显示) ===
 HOST-SUFFIX,scontent.xx.fbcdn.net,Proxy
 HOST-SUFFIX,static.xx.fbcdn.net,Proxy
