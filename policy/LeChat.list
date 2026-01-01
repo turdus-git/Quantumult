@@ -1,11 +1,11 @@
-# NAME: LeChat (Mistral AI)
-# UPDATED: 2026-01-01
+# NAME: LeChat (Mistral AI) - 2026 加固版
 
-# === Mistral AI 核心域名 ===
+# === 品牌关键词拦截 ===
+HOST-KEYWORD,mistral,Proxy
+
+# === 核心域名 ===
 HOST-SUFFIX,mistral.ai,Proxy
 HOST-SUFFIX,mistral.com,Proxy
 HOST-SUFFIX,lechat.ai,Proxy
 HOST-SUFFIX,mistral.run,Proxy
-
-# === 静态资源托管 ===
 HOST-SUFFIX,mistralai-site.azureedge.net,Proxy
