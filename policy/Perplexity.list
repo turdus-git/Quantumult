@@ -1,11 +1,11 @@
-# NAME: Perplexity (AI Search)
-# UPDATED: 2026-01-01
+# NAME: Perplexity - 2026 加固版
 
-# === Perplexity 核心域名 ===
+# === 品牌关键词拦截 ===
+HOST-KEYWORD,perplexity,Proxy
+
+# === 核心域名 ===
 HOST-SUFFIX,perplexity.ai,Proxy
 HOST-SUFFIX,pplx.ai,Proxy
 HOST-SUFFIX,perplx.com,Proxy
 HOST-SUFFIX,perplexityapp.ai,Proxy
-
-# === 静态资源托管 ===
 HOST-SUFFIX,perplexity-ai-site.azureedge.net,Proxy
