@@ -1,0 +1,22 @@
+# NAME: MetaAI
+# AUTHOR: Your Name
+# UPDATED: 2025-12-30
+
+# Meta AI 核心服务
+HOST-SUFFIX,meta.ai,Proxy
+HOST-SUFFIX,llama.com,Proxy
+HOST-SUFFIX,llama-api.com,Proxy
+HOST-SUFFIX,llama.meta.com,Proxy
+
+# Meta 统一身份验证与账号中心
+HOST-SUFFIX,auth.meta.com,Proxy
+HOST-SUFFIX,work.meta.com,Proxy
+HOST-SUFFIX,accountscenter.meta.com,Proxy
+
+# Meta 基础设施 (API/CDN)
+HOST-SUFFIX,graph.meta.com,Proxy
+HOST-SUFFIX,edge-chat.meta.ai,Proxy
+HOST-SUFFIX,scontent.xx.fbcdn.net,Proxy
+HOST-SUFFIX,static.xx.fbcdn.net,Proxy
+
+# 注意：threads.com 已删除，由 6.06 SO (Threads) 远程规则处理
