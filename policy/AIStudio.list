@@ -6,8 +6,8 @@
 # HOST-SUFFIX: 2
 # HOST-KEYWORD: 2
 # TOTAL: 11
-HOST,aistudio.google.com,AIStudio
 HOST,ai-studio.google,AIStudio
+HOST,alkalimakersuite-pa.clients6.google.com,AIStudio
 HOST,alkalimakersuite-pa.googleapis.com,AIStudio
 HOST,generativelanguage.googleapis.com,AIStudio
 HOST,cloudaistudio-pa.googleapis.com,AIStudio
