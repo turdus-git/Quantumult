@@ -2,7 +2,7 @@
 # AUTHOR: Custom
 # UPDATED: 2026-01-09
 
-# AI Studio 主站
+# AI Studio 主站及入口
 HOST,aistudio.google.com
 HOST-SUFFIX,aistudio.google.com
 HOST,ai-studio.google
