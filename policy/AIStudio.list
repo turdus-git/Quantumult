@@ -1,0 +1,23 @@
+# NAME: AIStudio-Extra
+# AUTHOR: Custom
+# UPDATED: 2026-01-09
+
+# AI Studio 主站
+HOST,aistudio.google.com
+HOST-SUFFIX,aistudio.google.com
+HOST,ai-studio.google
+
+# 对话后端核心接口
+HOST,alkalimakersuite-pa.clients6.google.com
+HOST,alkalimakersuite-pa.googleapis.com
+
+# 模型 API 及推理后端
+HOST,generativelanguage.googleapis.com
+HOST,cloudaistudio-pa.googleapis.com
+
+# 辅助插件与内容填充
+HOST,content-autofill.googleapis.com
+
+# 关键词兜底
+HOST-KEYWORD,aistudio
+HOST-KEYWORD,makersuite
