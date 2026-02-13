@@ -1,9 +1,13 @@
-# DNS 服务器域名
-host-suffix, dns.google, proxy
-host-suffix, 1dot1dot1dot1.cloudflare-dns.com, proxy
-host-suffix, cloudflare-dns.com, proxy
+# 让 DoH 的 IP 请求走 DNS 策略组
+IP-CIDR, 8.8.8.8/32, 2. DNS 类, no-resolve
+IP-CIDR, 8.8.4.4/32, 2. DNS 类, no-resolve
+IP-CIDR, 1.1.1.1/32, 2. DNS 类, no-resolve
+IP-CIDR, 1.0.0.1/32, 2. DNS 类, no-resolve
 
-# 地理位置查询服务 (与你 Clash 脚本一致)
-host-suffix, geoip.com, proxy
-host-keyword, ip-api.com, proxy
-host-keyword, ipapi.co, proxy
+# 让 DoH 的域名请求也走 DNS 策略组
+HOST, dns.google, 2. DNS 类
+HOST, cloudflare-dns.com, 2. DNS 类
+HOST, one.one.one.one, 2. DNS 类
+
+# 让检测网站走 DNS 策略组（可选）
+HOST-SUFFIX, browserleaks.com, 2. DNS 类
