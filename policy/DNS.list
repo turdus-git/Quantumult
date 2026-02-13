@@ -1,0 +1,9 @@
+# DNS 服务器域名
+host-suffix, dns.google, proxy
+host-suffix, 1dot1dot1dot1.cloudflare-dns.com, proxy
+host-suffix, cloudflare-dns.com, proxy
+
+# 地理位置查询服务 (与你 Clash 脚本一致)
+host-suffix, geoip.com, proxy
+host-keyword, ip-api.com, proxy
+host-keyword, ipapi.co, proxy
