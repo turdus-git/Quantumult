@@ -1,13 +1,4 @@
-# 让 DoH 的 IP 请求走 DNS 策略组
 IP-CIDR, 8.8.8.8/32, 2. DNS 类, no-resolve
-IP-CIDR, 8.8.4.4/32, 2. DNS 类, no-resolve
 IP-CIDR, 1.1.1.1/32, 2. DNS 类, no-resolve
-IP-CIDR, 1.0.0.1/32, 2. DNS 类, no-resolve
-
-# 让 DoH 的域名请求也走 DNS 策略组
 HOST, dns.google, 2. DNS 类
 HOST, cloudflare-dns.com, 2. DNS 类
-HOST, one.one.one.one, 2. DNS 类
-
-# 让检测网站走 DNS 策略组（可选）
-HOST-SUFFIX, browserleaks.com, 2. DNS 类
