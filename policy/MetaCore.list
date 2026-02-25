@@ -3,7 +3,6 @@
 # UPDATED: 2026-02-23
 # 注意: 本文件仅补充 FB/Threads 规则未覆盖的真实缺口。
 # 前提: 此补丁需与 Facebook.yaml 走相同的非封锁区节点 (如美国) 才能正常使用 Meta AI。
-
-
-HOST-SUFFIX,threads.com
-HOST-SUFFIX,tfbnw.net
+HOST-SUFFIX,meta.ai,Proxy
+HOST-SUFFIX,threads.com,Proxy
+HOST-SUFFIX,tfbnw.net,Proxy
